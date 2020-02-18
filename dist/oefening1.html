@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="css/stijl1.css">
+    <title>Oefening 1</title>
+</head>
+<body>
+<h1>Werken met <span>partials</span></h1>
+<p>With <span>CSS</span>, all of your code is contained in a single document and with each new feature this document
+    increases in
+    complexity while decreasing in readability and maintainability.
+</p>
+<p><span>Sass</span> gives us the power to break our code into smaller, easier to manage chunks of code called partials.
+</p>
+<p>A partial is any file with an underscore _ preceding the name. When Sass sees these files, it will not process them
+    into CSS files. A partial requires that it be imported into another file that will inevitability be processed into
+    CSS in order for it to be output.
+</p>
+<p>The order in which you list your imports is the order that Sass will follow when processing your code. If the
+    selector you wrote requires a mixin to be loaded before it is used, be sure to list the file containing the mixin
+    prior to the file that uses the mixin.
+</p>
+
+<form action="#" method="post">
+    <p class="flexcontainer">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+    </p>
+
+
+    <p>
+    <div><input type="radio" name="niveau" id="beginner" value="beginner" checked>
+        <label for="beginner">Beginner</label></div>
+
+    <div><input type="radio" name="niveau" id="expert" value="expert">
+        <label for="expert">Expert</label></div>
+    </p>
+
+    <p class="flexcontainer">
+        <input type="submit" value="Submit"/>
+    </p>
+</form>
+
+
+<p><a href="index.html">Naar het overzicht</a></p>
+</body>
+</html>
